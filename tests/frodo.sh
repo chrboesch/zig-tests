@@ -7,5 +7,9 @@ then
     exit 1
 fi
 
-# Test the programms
-zig build test
+# test programms
+for prog in progs/*.zig
+do
+    zig test $prog
+done
+
