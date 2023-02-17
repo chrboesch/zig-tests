@@ -13,3 +13,9 @@ do
     zig test $prog
 done
 
+# test C programms
+for cprog in cprogs/*.zig
+do
+    zig test -lc $cprog
+done
+
